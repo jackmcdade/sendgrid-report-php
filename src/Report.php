@@ -39,7 +39,7 @@ class Report {
    * Modules defined in SendGrid Web API
    * @var array
    */
-  static $modules = array('spamreports','blocks','bounces','invalidemails','unsubscribes');
+  static $modules = array('spamreports','blocks','bounces','invalidemails','unsubscribes','stats');
   /**
    * Actions defined in SendGrid Web API
    * @var array
@@ -49,7 +49,7 @@ class Report {
    * Parameters defined in SendGrid Web API
    * @var array
    */
-  static $parameters = array('date','days','limit','offset','type','email');
+  static $parameters = array('date','days','limit','offset','type','email','aggregate');
   /**
    * Convert snake_case parameters to PHP-valid camelCase equivalent
    * Remember that to comply with PSR, methods shouldn't have underscores
